@@ -9,4 +9,6 @@ public interface IAuthenticationFacade {
 
     Authentication getAuthentication();
 
+    String extractUsernameFromAuthentication();
+
 }
