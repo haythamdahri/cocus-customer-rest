@@ -1,4 +1,4 @@
-package com.cocus.microservices.customer.exceptions.exceptions;
+package com.cocus.microservices.customer.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

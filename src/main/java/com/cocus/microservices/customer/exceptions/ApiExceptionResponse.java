@@ -1,4 +1,4 @@
-package com.cocus.microservices.customer.exceptions.exceptions;
+package com.cocus.microservices.customer.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

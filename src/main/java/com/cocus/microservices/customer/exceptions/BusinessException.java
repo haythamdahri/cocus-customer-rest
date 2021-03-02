@@ -1,4 +1,4 @@
-package com.cocus.microservices.customer.exceptions.exceptions;
+package com.cocus.microservices.customer.exceptions;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor
-@ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "Resource Not Found")
-public class NotFoundException extends RuntimeException {
+@ResponseStatus(code = HttpStatus.BAD_REQUEST, reason = "Invalid Input Object")
+public class BusinessException extends RuntimeException {
 
     private static final long serialVersionUID = -4531182805106573140L;
 
-    public NotFoundException(String message) {
+    public BusinessException(String message) {
         super(message);
     }
 

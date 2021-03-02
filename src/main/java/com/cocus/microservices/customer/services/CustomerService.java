@@ -1,12 +1,12 @@
 package com.cocus.microservices.customer.services;
 
-import com.cocus.microservices.bo.entities.CustomerBO;
+import com.cocus.microservices.customer.dto.CustomerDTO;
 
 /**
  * @author Haytham DAHRI
  */
 public interface CustomerService {
 
-    CustomerBO getCustomerByUsername(String username);
+    CustomerDTO getCustomerByUsername(String username);
 
 }
