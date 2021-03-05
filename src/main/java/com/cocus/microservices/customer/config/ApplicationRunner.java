@@ -26,7 +26,11 @@ public class ApplicationRunner implements CommandLineRunner {
         if( this.customerRepository.count() == 0 ) {
             // haytham user
             CustomerBO haytham = new CustomerBO("Haytham", "Dahri", "haytham", null);
+            CustomerBO vasco = new CustomerBO("Vasco", "Pinho", "vasco", null);
+            CustomerBO jose = new CustomerBO("Jose", "Branco", "jose", null);
             this.customerRepository.save(haytham);
+            this.customerRepository.save(vasco);
+            this.customerRepository.save(jose);
         }
     }
 }
